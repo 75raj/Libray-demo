@@ -499,9 +499,9 @@ footer{background:var(--dark);border-top:1px solid rgba(255,255,255,.06);padding
     <div class="tim-card reveal">
       <h3>💺 Live Seat Availability</h3>
       <div class="seat-grid">
-        <div class="seat-zone"><div class="seat-zone-name">form-row  A</div><div class="seat-zone-count many" id="s1">28</div><div class="seat-zone-total">/35 free</div></div>
+        <div class="seat-zone"><div class="seat-zone-name">form-row  A</div><div class="seat-zone-count many" id="s1">8</div><div class="seat-zone-total">/35 free</div></div>
         <div class="seat-zone"><div class="seat-zone-name">form-row  B</div><div class="seat-zone-count few" id="s2">8</div><div class="seat-zone-total">/ 25 free</div></div>
-        <div class="seat-zone"><div class="seat-zone-name">form-row  C</div><div class="seat-zone-count many" id="s3">20</div><div class="seat-zone-total">/ 25 free</div></div>
+        <div class="seat-zone"><div class="seat-zone-name">form-row  C</div><div class="seat-zone-count many" id="s3">10</div><div class="seat-zone-total">/ 25 free</div></div>
         <div class="seat-zone"><div class="seat-zone-name">Silent Room</div><div class="seat-zone-count full" id="s4">0</div><div class="seat-zone-total">/ 1 free</div></div>
         <div class="seat-zone"><div class="seat-zone-name">Girls Zone</div><div class="seat-zone-count many" id="s5">18</div><div class="seat-zone-total">/ 60 free</div></div>
         <div class="seat-zone"><div class="seat-zone-name">Disc. Room</div><div class="seat-zone-count few" id="s6">1</div><div class="seat-zone-total">/ 1 free</div></div>
@@ -521,64 +521,74 @@ footer{background:var(--dark);border-top:1px solid rgba(255,255,255,.06);padding
     </div>
   </div>
   <div class="plans-grid">
-    <div class="plan-card reveal">
-      <div class="plan-name">Daily Pass</div>
-      <div class="plan-price">₹40<span>/day</span></div>
-      <div class="plan-duration">Single day — 5 AM to 10 PM</div>
-      <ul class="plan-features">
-        <li>Any available seat</li>
-        <li>Wi-Fi access</li>
-        <li>Power socket</li>
-        <li>RO Drinking water</li>
-        <li class="no">Locker facility</li>
-        <li class="no">Reserved seat</li>
-      </ul>
-      <button class="btn-outline" onclick="selectPlan('Daily Pass – ₹40')" style="width:100%;justify-content:center;">Get Pass</button>
-    </div>
-    <div class="plan-card featured reveal">
-      <div class="plan-badge">Most Popular</div>
-      <div class="plan-name">Monthly</div>
-      <div class="plan-price">₹599<span>/month</span></div>
-      <div class="plan-duration">30 days unlimited access</div>
-      <ul class="plan-features">
-        <li>Reserved seat option</li>
-        <li>Wi-Fi access</li>
-        <li>Power socket</li>
-        <li>RO Drinking water</li>
-        <li>Locker facility</li>
-        <li>Morning batch access</li>
-      </ul>
-      <button class="btn-gold" onclick="selectPlan('Monthly – ₹599')" style="width:100%;justify-content:center;">Get Membership</button>
-    </div>
-    <div class="plan-card reveal">
-      <div class="plan-name">3 Months</div>
-      <div class="plan-price">₹1499<span>/3mo</span></div>
-      <div class="plan-duration">Best for serious aspirants</div>
-      <ul class="plan-features">
-        <li>Reserved seat guaranteed</li>
-        <li>Priority Wi-Fi</li>
-        <li>Power socket</li>
-        <li>Free locker</li>
-        <li>Discussion room access</li>
-        <li>Priority entry</li>
-      </ul>
-      <button class="btn-outline" onclick="selectPlan('3 Months – ₹1499')" style="width:100%;justify-content:center;">Get Plan</button>
-    </div>
-    <div class="plan-card reveal">
-      <div class="plan-name">Annual</div>
-      <div class="plan-price">₹4999<span>/year</span></div>
-      <div class="plan-duration">Full year — Best value!</div>
-      <ul class="plan-features">
-        <li>Permanent reserved seat</li>
-        <li>Priority Wi-Fi</li>
-        <li>Free locker</li>
-        <li>Discussion room priority</li>
-        <li>Guest pass ×5</li>
-        <li>All facilities included</li>
-      </ul>
-      <button class="btn-outline" onclick="selectPlan('Annual – ₹4999')" style="width:100%;justify-content:center;">Get Plan</button>
-    </div>
+  <div class="plan-card reveal">
+    <div class="plan-name">Daily Pass</div>
+    <div class="plan-price"><span style="text-decoration: line-through;">₹50</span> ₹25<span>/day</span></div>
+    <div class="plan-duration">Single day — 5 AM to 10 PM</div>
+    <ul class="plan-features">
+      <li>Any available seat</li>
+      <li>Wi-Fi access</li>
+      <li>Power socket</li>
+      <li>RO Drinking water</li>
+      <li class="no">Locker facility</li>
+      <li class="no">Reserved seat</li>
+    </ul>
+    <div style="color: green; font-weight:bold;">You save ₹25!</div>
+    <button class="btn-outline" onclick="selectPlan('Daily Pass – ₹25')" style="width:100%;justify-content:center;">Get Pass</button>
   </div>
+
+  <div class="plan-card featured reveal">
+    <div class="plan-badge">Premium</div>
+    <div class="plan-name">Monthly</div>
+    <div class="plan-price"><span style="text-decoration: line-through;">₹999</span> ₹599<span>/month</span></div>
+    <div class="plan-duration">30 days unlimited access</div>
+    <ul class="plan-features">
+      <li>Reserved seat option</li>
+      <li>Wi-Fi access</li>
+      <li>Power socket</li>
+      <li>RO Drinking water</li>
+      <li>Locker facility</li>
+      <li>Morning batch access</li>
+    </ul>
+    <div style="color: green; font-weight:bold;">You save ₹400!</div>
+    <button class="btn-gold" onclick="selectPlan('Monthly – ₹599')" style="width:100%;justify-content:center;">Get Membership</button>
+  </div>
+
+  <div class="plan-card featured reveal" style="border-color: lightgreen;">
+    <div class="plan-badge">Most Popular</div>
+    <div class="plan-name">3 Months</div>
+    <div class="plan-price"><span style="text-decoration: line-through;">₹2399</span> ₹1399<span>/3mo</span></div>
+    <div class="plan-duration">Best for serious aspirants</div>
+    <ul class="plan-features">
+      <li>Reserved seat guaranteed</li>
+      <li>Priority Wi-Fi</li>
+      <li>Power socket</li>
+      <li>Free locker</li>
+      <li>Discussion room access</li>
+      <li>Priority entry</li>
+      <li>RO Drinking water</li>
+      <li>Locker facility</li>
+    </ul>
+    <div style="color: green; font-weight:bold;">You save ₹1000!</div>
+    <button class="btn-outline" onclick="selectPlan('3 Months – ₹1399')" style="width:100%;justify-content:center;">Get Plan</button>
+  </div>
+
+  <div class="plan-card reveal">
+    <div class="plan-name">Annual</div>
+    <div class="plan-price"><span style="text-decoration: line-through;">₹9999</span> ₹4999<span>/year</span></div>
+    <div class="plan-duration">Full year — Best value!</div>
+    <ul class="plan-features">
+      <li>Permanent reserved seat</li>
+      <li>Priority Wi-Fi</li>
+      <li>Free locker</li>
+      <li>Discussion room priority</li>
+      <li>Guest pass ×5</li>
+      <li>All facilities included</li>
+    </ul>
+    <div style="color: green; font-weight:bold;">You save ₹5000!</div>
+    <button class="btn-outline" onclick="selectPlan('Annual – ₹4999')" style="width:100%;justify-content:center;">Get Plan</button>
+  </div>
+</div>
 </section>
 
 <!-- RULES -->
@@ -609,32 +619,41 @@ footer{background:var(--dark);border-top:1px solid rgba(255,255,255,.06);padding
       <h2 class="section-title">What Students<br><em>Say About Us</em></h2>
     </div>
   </div>
-  <div class="testi-grid">
+<div class="testi-grid">
     <div class="testi-card reveal">
-      <div class="stars">★★★★★</div>
-      <p class="testi-text">Budha Library ne meri SSC preparation ko ek naya direction diya. AC hall, peaceful environment, aur fast Wi-Fi — sab kuch perfect hai. Pawan Sir ka support bhi bohot helpful hai!</p>
-      <div class="testi-author">
-        <img class="testi-avatar" src="student1.jpg" onerror="this.src='https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?w=80&q=80'" alt="Rohan">
-        <div><div class="testi-name">Rohan Kumar</div><div class="testi-role">SSC Aspirant, BodhGaya</div></div>
-      </div>
+        <div class="stars">★★★★★</div>
+        <p class="testi-text">Budha Library ne meri SSC preparation ko ek naya direction diya. AC hall, peaceful environment, aur fast Wi-Fi — sab kuch perfect hai. Pawan Sir ka support bhi bohot helpful hai!</p>
+        <div class="testi-author">
+            <img class="testi-avatar" src="student1.jpg" onerror="this.src='https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?w=80&q=80'" alt="Rohan">
+            <div><div class="testi-name">Rohan Kumar</div><div class="testi-role">SSC Aspirant, BodhGaya</div></div>
+        </div>
     </div>
     <div class="testi-card reveal">
-      <div class="stars">★★★★★</div>
-      <p class="testi-text">Girls ke liye alag aur safe zone hai, isliye mujhe bohot comfortable feel hota hai. Wi-Fi itna fast hai ki online mock tests bina buffering ke hote hain. Best library in Bodhgaya!</p>
-      <div class="testi-author">
-        <img class="testi-avatar" src="student2.jpg" onerror="this.src='https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=80&q=80'" alt="Priya">
-        <div><div class="testi-name">Priya Kumari</div><div class="testi-role">SSC CGL Student</div></div>
-      </div>
+        <div class="stars">★★★★★</div>
+        <p class="testi-text">Girls ke liye alag aur safe zone hai, isliye mujhe bohot comfortable feel hota hai. Wi-Fi itna fast hai ki online mock tests bina buffering ke hote hain. Best library in Bodhgaya!</p>
+        <div class="testi-author">
+            <img class="testi-avatar" src="student2.jpg" onerror="this.src='https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=80&q=80'" alt="Priya">
+            <div><div class="testi-name">Sweta</div><div class="testi-role">12th Student</div></div>
+        </div>
     </div>
     <div class="testi-card reveal">
-      <div class="stars">★★★★☆</div>
-      <p class="testi-text">Morning 5 AM batch se main 3 ghante college se pehle padh leta hoon. Free parking bhi hai to bike leke aana easy hai. Discussion room bhi bohot helpful hai group study ke liye!</p>
-      <div class="testi-author">
-        <img class="testi-avatar" src="student3.jpg" onerror="this.src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&q=80'" alt="Amit">
-        <div><div class="testi-name">Amit Singh</div><div class="testi-role">JEE Aspirant, Bodh Gaya</div></div>
-      </div>
+        <div class="stars">★★★★☆</div>
+        <p class="testi-text">Morning 5 AM batch se main 3 ghante college se pehle padh leta hoon. Free parking bhi hai to bike leke aana easy hai. Discussion room bhi bohot helpful hai group study ke liye!</p>
+        <div class="testi-author">
+            <img class="testi-avatar" src="student3.jpg" onerror="this.src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&q=80'" alt="Amit">
+            <div><div class="testi-name">Amit Singh</div><div class="testi-role">JEE Aspirant, Bodh Gaya</div></div>
+        </div>
     </div>
-  </div>
+    <!-- New Testimonial Card -->
+    <div class="testi-card reveal">
+        <div class="stars">★★★★★</div>
+        <p class="testi-text">Library ka environment bohot peaceful hai. AC hall aur proper lighting se padhai aur productive ho jati hai. Staff bhi friendly aur helpful hai. Truly recommended!</p>
+        <div class="testi-author">
+            <img class="testi-avatar" src="student4.jpg" onerror="this.src='https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=80&q=80'" alt="Neha">
+            <div><div class="testi-name">Sweeti </div><div class="testi-role">12th class student  (Bodh Gaya ) </div></div>
+        </div>
+    </div>
+</div>
 </section>
 
 <!-- CONTACT -->
